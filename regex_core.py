@@ -115,6 +115,3 @@ class RegexCore:
 regex_core= RegexCore()
 # def __transform__(self, tr1):
 #     re.split(r' ', tr1)
-if __name__ == '__main__':
-    #start('callminer_cats')
-    print (regex_core.compose('''([tire% damag%] | [tire% bust%])''',limit=30))
