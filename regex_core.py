@@ -18,7 +18,7 @@ class RegexCore:
 
         # Removes any Near: before or After from the
         # TODO: this Logic will need to built later.
-        print(txt)
+        # print(txt)
         text1 = re.sub(r'(?<!(NEAR|FORE|FTER)):\d+\.?\d*s?', r'', txt)
         # Replace quotes if they are present in the beginning and end
         text1 = re.sub(r'^"(.*)"$', r'\g<1>', text1)
@@ -111,7 +111,3 @@ class RegexCore:
         :return:
         """
         return r'(' + term + r')'
-
-regex_core= RegexCore()
-# def __transform__(self, tr1):
-#     re.split(r' ', tr1)
