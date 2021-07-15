@@ -4,13 +4,13 @@ you can use the compose method of RegexCore class by calling it as
 ```
 from regex_core import RegexCore
 rege = RegexCore()
-reg.compose('''"test* exit"''',limit=30)
+pattern = ['''"test* exit"''','''[word1 word2]''']
+for patt in pattern:
+    print (f'{patt} : {rege.compose(patt, limit=30)}')
 ```  
-  
- 
-The input Pattern is defined in the last line of the file getregex.py.
+  The input patterns are defined in an array 'Pattern' here
 
-![image](https://user-images.githubusercontent.com/4302998/125862852-3e69886a-49ef-46e5-8431-3b3d9608c042.png)
+![image](https://user-images.githubusercontent.com/4302998/125864848-c18a312f-e657-4dfd-ba47-e3f8d3e4ab06.png)
 
 eg" "test* exit" which should match test followed by upto 6 words follwed by exit.
 
